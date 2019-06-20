@@ -33,7 +33,7 @@ class OPcache_List_Table extends WP_List_Table {
 	}
 
 	function column_name($item) {
-		$actions = NULL;
+		$actions = [];
 		if(strpos($item['name'], 'directives.')===0) {
 			$manual = sprintf(
 				'<a href="%1$s/opcache.configuration#ini.%2$s" title="%3$s" target="_blank"><span class="genericon genericon-info"></span></a>',
